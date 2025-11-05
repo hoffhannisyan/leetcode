@@ -31,9 +31,16 @@ func main() {
 	// fmt.Print("]\n\n")
 
 	// --- LeetCode #3: Longest Substring Without Repeating Characters ---
-	s := "pwwkew"
-	length := tasks.LengthOfLongestSubstring(s)
-	fmt.Println("Longest Substring Length:", length)
+	// s := "pwwkew"
+	// length := tasks.LengthOfLongestSubstring(s)
+	// fmt.Println("Longest Substring Length:", length)
+	// fmt.Println()
+
+	// --- LeetCode #4: Median of Two Sorted Arrays ---
+	nums1 := []int{1, 2}
+	nums2 := []int{3, 4}
+	median := tasks.FindMedianSortedArrays(nums1, nums2)
+	fmt.Println("Median of Two Sorted Arrays:", median)
 	fmt.Println()
 
 }
