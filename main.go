@@ -70,12 +70,20 @@ func main() {
 
 	// --- LeetCode #6: Zigzag Conversion ---
 
-	printTitle(6, "Zigzag Conversion")
+	// printTitle(6, "Zigzag Conversion")
 
-	s := "PAYPALISHIRING"
-	fmt.Printf("Input: %q, numRows = 3 -> Output: %q\n", s, tasks.Convert(s, 3))
-	fmt.Printf("Input: %q, numRows = 4 -> Output: %q\n", s, tasks.Convert(s, 4))
-	fmt.Printf("Input: %q, numRows = 1 -> Output: %q\n", "A", tasks.Convert("A", 1))
+	// s := "PAYPALISHIRING"
+	// fmt.Printf("Input: %q, numRows = 3 -> Output: %q\n", s, tasks.Convert(s, 3))
+	// fmt.Printf("Input: %q, numRows = 4 -> Output: %q\n", s, tasks.Convert(s, 4))
+	// fmt.Printf("Input: %q, numRows = 1 -> Output: %q\n", "A", tasks.Convert("A", 1))
+
+	// --- LeetCode #7: Reverse Integer ---
+	printTitle(7, "Reverse Integer")
+
+	fmt.Printf("Input: %d -> Output: %d\n", 123, tasks.Reverse(123))
+	fmt.Printf("Input: %d -> Output: %d\n", -123, tasks.Reverse(-123))
+	fmt.Printf("Input: %d -> Output: %d\n", 120, tasks.Reverse(120))
+	fmt.Printf("Input: %d -> Output: %d\n", 1534236469, tasks.Reverse(1534236469)) // overflow -> 0
 
 }
 
