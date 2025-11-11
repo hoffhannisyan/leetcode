@@ -7,8 +7,6 @@ import (
 )
 
 func main() {
-	fmt.Println("LeetCode Solutions in Go")
-	fmt.Println("========================")
 
 	// --- LeetCode #1: Two Sum ---
 	/*
@@ -62,13 +60,22 @@ func main() {
 
 	// --- LeetCode #5: Longest Palindromic Substring ---
 
-	printTitle(5, "Longest Palindromic Substring")
+	// printTitle(5, "Longest Palindromic Substring")
 
-	s1 := "babad"
-	fmt.Printf("Input: %q -> Output: %q\n", s1, tasks.LongestPalindrome(s1))
+	// s1 := "babad"
+	// fmt.Printf("Input: %q -> Output: %q\n", s1, tasks.LongestPalindrome(s1))
 
-	s2 := "cbbd"
-	fmt.Printf("Input: %q -> Output: %q\n", s2, tasks.LongestPalindrome(s2))
+	// s2 := "cbbd"
+	// fmt.Printf("Input: %q -> Output: %q\n", s2, tasks.LongestPalindrome(s2))
+
+	// --- LeetCode #6: Zigzag Conversion ---
+
+	printTitle(6, "Zigzag Conversion")
+
+	s := "PAYPALISHIRING"
+	fmt.Printf("Input: %q, numRows = 3 -> Output: %q\n", s, tasks.Convert(s, 3))
+	fmt.Printf("Input: %q, numRows = 4 -> Output: %q\n", s, tasks.Convert(s, 4))
+	fmt.Printf("Input: %q, numRows = 1 -> Output: %q\n", "A", tasks.Convert("A", 1))
 
 }
 
